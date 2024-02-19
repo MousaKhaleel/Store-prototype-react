@@ -1,0 +1,5 @@
+.s{
+    margin-top: 10%;
+    display: grid;
+    grid-auto-flow: column;
+}
