@@ -4,7 +4,12 @@ function Payment() {
     const [balance, setBalance] = useState(20);
 
     function handlePay() {
-        setBalance(prevBalance => prevBalance - 5);
+        if (balance>0) {
+                    setBalance(prevBalance => prevBalance - 5);
+        }
+        else
+        setBalance(prevBalance => 'no enough money');
+
     }
 
     return (
